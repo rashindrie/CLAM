@@ -1,0 +1,13 @@
+
+Install dependencies
+
+https://github.com/mahmoodlab/CLAM/issues/190
+
+
+Download data from Mediaflux
+
+1. Setup configuration
+https://wiki-rcs.unimelb.edu.au/display/RCS/Configuration+File
+2. Download command line helper
+3. Download data
+ unimelb-mf-download --mf.config ~/.Arcitecta/mflux.cfg --out  ./ /projects/proj-4360_oapr-1128.4.425/rashindrie/public_datasets/TCGA/data/tcga_filtered
