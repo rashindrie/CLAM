@@ -18,6 +18,8 @@ from wsi_core.util_classes import isInContourV1, isInContourV2, isInContourV3_Ea
 from utils.file_utils import load_pkl, save_pkl
 
 Image.MAX_IMAGE_PIXELS = 933120000
+Image.MAX_IMAGE_PIXELS = 5000000000
+
 
 class WholeSlideImage(object):
     def __init__(self, path):
