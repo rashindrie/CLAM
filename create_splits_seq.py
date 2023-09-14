@@ -41,6 +41,21 @@ elif args.task == 'task_2_tumor_subtyping':
                             patient_voting='maj',
                             ignore=[])
 
+elif args.task == 'task_3_til_classification':
+    args.n_classes=3
+    dataset = Generic_MIL_Dataset(csv_path = '/home/ubuntu/CLAM/annotations/updated_dataset.csv',
+                            data_dir= os.path.join(args.data_root_dir, 'til_classification_resnet_features'),
+                            shuffle = False,
+                            seed = args.seed,
+                            print_info = True,
+                            label_dict = {'low_til':0, 'high_til':1},
+                            patient_strat= False,
+                            ignore=[])
+
+    if args.model_type in ['clam_sb', 'clam_mb']:
+        assert args.subtyping
+
+
 else:
     raise NotImplementedError
 
