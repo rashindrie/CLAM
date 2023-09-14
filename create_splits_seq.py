@@ -55,7 +55,6 @@ elif args.task == 'task_3_til_classification':
     if args.model_type in ['clam_sb', 'clam_mb']:
         assert args.subtyping
 
-
 else:
     raise NotImplementedError
 
