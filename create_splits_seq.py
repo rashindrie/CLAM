@@ -17,6 +17,8 @@ parser.add_argument('--val_frac', type=float, default= 0.1,
                     help='fraction of labels for validation (default: 0.1)')
 parser.add_argument('--test_frac', type=float, default= 0.1,
                     help='fraction of labels for test (default: 0.1)')
+parser.add_argument('--data_root_dir', type=str, default=None,
+                    help='data directory')
 
 args = parser.parse_args()
 
