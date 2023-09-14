@@ -54,9 +54,6 @@ elif args.task == 'task_3_til_classification':
                             patient_strat= False,
                             ignore=[])
 
-    if args.model_type in ['clam_sb', 'clam_mb']:
-        assert args.subtyping
-
 else:
     raise NotImplementedError
 
