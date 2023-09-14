@@ -50,7 +50,7 @@ elif args.task == 'task_3_til_classification':
                             shuffle = False,
                             seed = args.seed,
                             print_info = True,
-                            label_dict = {'0':0, '0':1},
+                            label_dict = {0:0, 1:1},
                             patient_strat= False,
                             ignore=[])
 
