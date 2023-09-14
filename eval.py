@@ -101,7 +101,7 @@ elif args.task == 'task_2_tumor_subtyping':
 #                             ignore=['TCGA-SARC'])
 
 elif args.task == 'task_3_til_classification':
-    args.n_classes=3
+    args.n_classes=2
     dataset = Generic_MIL_Dataset(csv_path = '/home/ubuntu/CLAM/annotations/updated_dataset.csv',
                             data_dir= os.path.join(args.data_root_dir, 'til_classification_resnet_features'),
                             shuffle = False,
